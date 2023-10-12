@@ -1,0 +1,294 @@
+@media (max-width: 768px) {
+  .menu {
+    &__btn {
+      display: block;
+    }
+    &__list {
+      display: none;
+    }
+  }
+
+  .rightside-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 320px;
+    width: 100%;
+    max-width: 375px;
+    height: 667px;
+    background-color: #fff;
+    &__header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      align-items: center;
+      padding-left: 16px;
+      padding-right: 19px;
+    }
+    &__list {
+      display: flex;
+    }
+  }
+
+  .top {
+    &::before {
+      min-height: 1024px;
+    }
+    &__content {
+      padding: 317px 0px 398px;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 125%;
+      width: 476px;
+      margin-bottom: 17px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 175%;
+      margin-bottom: 40px;
+    }
+  }
+
+  .work {
+    &__title {
+      margin-top: 56px;
+      margin-bottom: 42px;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 34px;
+      row-gap: 32px;
+      margin-bottom: 71px;
+    }
+    &__item {
+      display: flex;
+    }
+    &__item__img {
+      width: 56px;
+      height: 56px;
+      margin: 0;
+      margin-right: 16px;
+    }
+    &__item__title {
+      width: 270px px;
+      max-height: 24px;
+    }
+    &__item__text {
+      width: 270px;
+      height: 48px;
+    }
+  }
+
+  .statistic {
+    &__box {
+      margin-bottom: 56px;
+    }
+    &__content {
+      margin-right: 24px;
+    }
+    &__title {
+      height: 24px;
+      font-size: 20px;
+      line-height: 120%;
+      margin-bottom: 15px;
+    }
+    &__img {
+      width: 351px;
+      height: 265px;
+    }
+  }
+
+  .reviews {
+    &__item {
+      width: 351px;
+    }
+    &__item-text {
+      height: 100%;
+      width: 307px;
+    }
+  }
+  .slick-btn img {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .top {
+    &::before {
+      min-height: 596px;
+    }
+    &__content {
+      padding: 92px 0px 172px;
+    }
+    &__title {
+      font-size: 24px;
+      line-height: 133.333%;
+      height: 96px;
+      width: 288px;
+      margin-bottom: 10px;
+    }
+    &__text {
+      margin-bottom: 26px;
+    }
+  }
+  .work {
+    &__title {
+      margin-bottom: 26px;
+      font-size: 24px;
+      line-height: 133.333%;
+    }
+    &__item {
+      margin: 0 auto;
+    }
+    &__list {
+      grid-template-columns: 1fr;
+      column-gap: 0px;
+      row-gap: 32px;
+      margin-bottom: 56px;
+    }
+  }
+
+  .statistic {
+    &__box {
+      text-align: center;
+      flex-direction: column;
+      margin-bottom: 56px;
+    }
+    &__content {
+      margin-right: 0;
+      width: 342px;
+      height: 196px;
+    }
+    &__title {
+      width: 342px;
+      height: 48px;
+      margin-bottom: 0;
+    }
+    &__text {
+      padding-right: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__img {
+      margin-bottom: 7px;
+      order: -1;
+      width: 342px;
+      height: 258px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    max-width: 530px;
+    padding: 0 10px;
+  }
+  .top {
+    &::before {
+      min-height: 509px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    max-width: 530px;
+    padding: 0 10px;
+  }
+  .work {
+    &__item {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 360px;
+    padding: 0 7.5px;
+  }
+  .work {
+    &__item {
+      margin-left: 0px;
+    }
+  }
+  .reviews {
+    &__item {
+      width: 340px;
+    }
+    &__item-text {
+      width: 296px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .container {
+    max-width: 340px;
+    padding: 0 5px;
+  }
+  .top {
+    &__content {
+      padding: 48px 0px 129px;
+    }
+  }
+  .work {
+    &__title {
+      width: 288px;
+    }
+    &__item__title {
+      width: 216px;
+      max-height: 48px;
+    }
+    &__item__text {
+      width: 216px;
+      max-height: 72px;
+    }
+  }
+  .statistic {
+    &__box {
+      padding-bottom: 56px;
+    }
+    &__content {
+      width: 288px;
+      height: 252px;
+    }
+    &__title {
+      width: inherit;
+      margin: 27px 0;
+    }
+    &__img {
+      margin-bottom: 0px;
+      width: 288px;
+      height: 218px;
+    }
+  }
+  .reviews {
+    &__item {
+      width: 288px;
+    }
+    &__item-text {
+      width: 244px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 310px;
+    padding: 0 5px;
+  }
+  .reviews {
+    &__item {
+      width: 288px;
+      height: 340px;
+    }
+    &__item-text {
+      width: 244px;
+    }
+  }
+}
